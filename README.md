@@ -3,8 +3,6 @@
 A DeepSeek Harness Web plugin that searches text across **every** session workspace
 from one sidebar panel, then opens the matched session in one click.
 
-![icon](./icon.svg)
-
 ## What it does
 
 - Adds a magnifier entry to the sidebar's panel list (`sidebar.panellist`).
