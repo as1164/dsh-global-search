@@ -3,6 +3,12 @@
 A DeepSeek Harness Web plugin that searches text across **every** session workspace
 from one sidebar panel, then opens the matched session in one click.
 
+## Screenshots
+
+![Global session search panel](image_1.png)
+
+![Global search entry in the sidebar](image_2.png)
+
 ## What it does
 
 - Adds a magnifier entry to the sidebar's panel list (`sidebar.panellist`).
@@ -40,10 +46,10 @@ profile's patch layer.
 
 ## Verification status
 
-- JavaScript syntax, manifest, patch YAML, locale JSON, and icon SVG validated.
+- JavaScript syntax, manifest, patch YAML, and locale JSON validated.
 - Bundle installs with `application: applied`; both Client slot entries are live.
 - The route returns ranked cross-workspace hits (curl-verified) and refuses empty,
   overlong, cross-site, and non-GET requests.
-- Rendered appearance was not screenshot-verified in this environment (no browser
-  control). The panel uses only `--dsw-alias-*` theme tokens and reads its texts
-  through the Client locale service (English and Chinese dictionaries shipped).
+- The screenshots above show the rendered panel and sidebar entry. The panel uses
+  only `--dsw-alias-*` theme tokens and reads its texts through the Client locale
+  service (English and Chinese dictionaries shipped).
