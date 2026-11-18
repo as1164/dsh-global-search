@@ -12,9 +12,7 @@ from one sidebar panel, then opens the matched session in one click.
 ```sh
 dsh plugin --profile web add dsh-global-search
 ```
-
-Replace `web` with your profile name if you boot `dsh` with a different one, then
-reload the page (or restart `dsh web`) so the plugin's browser half mounts.
+Replace `web` with your actual profile.
 
 ## What it does
 
