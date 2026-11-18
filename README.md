@@ -5,9 +5,7 @@ from one sidebar panel, then opens the matched session in one click.
 
 ## Screenshots
 
-![Global session search panel](screenshot-panel.webp)
-
-![Global search entry in the sidebar](screenshot-sidebar.webp)
+![Sidebar and search view](image_1.png)
 
 ## What it does
 
