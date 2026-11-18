@@ -1,0 +1,27 @@
+# One private full-text index and the panel that queries it.
+#
+# `isolate` keeps this `sessionQuery` provider inside the group. The shipped
+# `session-query-sqlite` row stays at `openAt: never`, so the built-in sidebar
+# search and every other consumer keep their current behavior while the panel
+# gets a real content index of its own.
+#
+# The index is a disposable derived cache: deleting the file only costs one
+# rebuild on the next search.
+- insert:
+    - id: global-search
+      name: cordis:group
+      group: true
+      isolate:
+        sessionQuery: true
+      config:
+        - id: global-search-index
+          name: '@deepseek-ai/dsh-session-query-sqlite'
+          config:
+            path: !!js dshHomePath('cache/global-search-index.sqlite')
+            openAt: first-search
+            # One file, no growing WAL beside it: this index is rebuilt, not
+            # written to continuously.
+            journalMode: truncate
+            snippetChars: 320
+        - id: global-search-panel
+          name: dsh-global-search
