@@ -5,7 +5,7 @@ from one sidebar panel, then opens the matched session in one click.
 
 ## Screenshots
 
-![Sidebar and search view](image_1.png)
+![Sidebar and search view](https://raw.githubusercontent.com/as1164/dsh-global-search/main/image_1.png)
 
 ## What it does
 

@@ -44,5 +44,14 @@
         "@deepseek-ai/dsh-client-ui-workspace"
       ]
     }
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/as1164/dsh-global-search.git"
+  },
+  "homepage": "https://github.com/as1164/dsh-global-search#readme",
+  "bugs": {
+    "url": "https://github.com/as1164/dsh-global-search/issues"
+  },
+  "author": "as1164"
 }
