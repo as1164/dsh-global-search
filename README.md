@@ -7,6 +7,15 @@ from one sidebar panel, then opens the matched session in one click.
 
 ![Sidebar and search view](https://raw.githubusercontent.com/as1164/dsh-global-search/main/image_1.png)
 
+## Install
+
+```sh
+dsh plugin --profile web add dsh-global-search
+```
+
+Replace `web` with your profile name if you boot `dsh` with a different one, then
+reload the page (or restart `dsh web`) so the plugin's browser half mounts.
+
 ## What it does
 
 - Adds a magnifier entry to the sidebar's panel list (`sidebar.panellist`).
